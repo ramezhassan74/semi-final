@@ -1,0 +1,907 @@
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.nav {
+    width: 1342px;
+    /* background-color: antiquewhite; */
+    position: relative;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+}
+ 
+.logop{
+    width: 201px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+ 
+.logo {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;    
+}
+.navlogoback{
+    display: flex;
+    position: absolute;
+    width: 41px;
+    height: 41px;
+    flex-shrink: 0;
+    fill: #DEEEFE;
+    z-index: 0;
+}
+.navlogoimg{
+    display: flex;
+    position: absolute;
+    width: 29.588px;
+    height: 27.168px;
+    flex-shrink: 0;
+    z-index: 1;
+}
+.logotext{
+ 
+    color: #462E6A;
+    font-size: 24px;
+    font-family: Mulish;
+    font-weight: 700;
+    margin-left: 26px;
+    word-wrap: break-word;
+    z-index: 2;
+}
+ 
+.navp{
+    position: relative;
+    display: flex;
+    align-items: center;
+ 
+}
+ 
+.home,
+.find,
+.apps {
+    /* color: #1F1534; */
+    color: #1f15347a;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    /* opacity: 0.5; */
+    margin-right: 20px;
+    text-decoration: none;
+}
+.home:hover,
+.find:hover,
+.apps:hover{
+    color: #2E4E92;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 20px;
+    text-decoration: underline;
+}
+ 
+.pagesp{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.pagesrec {
+    position: relative;
+    width: 393px;
+    height: 59px;
+    border-radius: 20px;
+    border: 3px solid #2E4E92;
+    background: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+}
+.pagesrec:hover {
+    position: relative;
+    width: 393px;
+    height: 59px;
+    border-radius: 20px;
+    border: 3px solid #2E4E92;
+    background: #2E4E92;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.pagesrec::after {
+    display: none; /* Hide the default Bootstrap arrow */
+}
+.pagesparent{
+    position: relative;
+    width: 163px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ 
+}
+.pages{
+    color: #000;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transition: color 0.3s ease-in-out;
+}
+.arrow svg path {
+    transition: fill 0.3s ease-in-out; /* Add transition for arrow color */
+    transform-origin: center;
+    transform-box: fill-box;
+    /* animation: rotateArrow 0.3s ease-in-out forwards; */
+}
+ 
+ 
+.pagesrec:hover .pages {
+    color: #fff; /* Change text color when .pagesrec is hovered */
+}
+ 
+.pagesrec:hover .arrow svg path {
+    fill: #fff; /* Change arrow color when .pagesrec is hovered */
+    animation: rotateArrow 0.3s ease-in-out forwards;
+}
+.pagesrec:hover .arrow svg {
+    transform: rotate(180deg); /* Rotate the arrow 180 degrees on hover */
+}
+@keyframes rotateArrow {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+.pagesrec:not(:hover) .arrow svg path {
+    animation: rotateReverseArrow 0.3s ease-in-out forwards; /* Reverse rotation */
+}
+ 
+@keyframes rotateReverseArrow {
+    from {
+        transform: rotate(180deg);
+    }
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+.explore-title{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+color: #3C567B;
+ font-size: 48px;
+ font-family: Mulish;
+ font-weight: 700;
+ line-height: 56px;
+ word-wrap: break-word;
+margin-top: 292px; 
+}
+.exploretext{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #93C1F9;
+font-size: 19px;
+font-family: Roboto;
+font-weight: 500;
+line-height: 27px;
+letter-spacing: 0.38px;
+word-wrap: break-word;
+margin-top: 15px;
+}
+
+.join-button {
+    width: 200px;
+    height: 60px;
+    /*Adjustedheightforbettervisibility*/background: #458FF6;
+    border-radius: 30px;
+    /*Adjustedforbetteraesthetics*/color: white;
+    font-size: 19px;
+    font-family: Mulish;
+    font-weight: 700;
+    line-height: 60px;
+    word-wrap: break-word;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+
+    -webkit-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    -ms-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+    -o-transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.join-button:hover {
+    background: white;
+    color: #458FF6;
+    
+    
+}
+
+.content-body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-card{
+    width: 1180px;
+    height: 487.64941px;
+    background: linear-gradient(215deg, #6888C8 0%, #5A98F2 100%);
+    border-radius: 24px;
+    
+    
+    
+    margin-bottom: 66.14px;
+    margin-top: 163px;
+
+    
+    flex-direction: column;
+    
+
+}
+
+
+.img1{
+    border-radius: 20px;
+    position: absolute;
+    right:820px;
+    top:1030px;
+}
+.card1title{
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 133.333% */ 
+position: absolute;
+top:870px;
+right: 440px;
+}
+
+.card1text{
+    color: rgba(255, 255, 255, 0.90);
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 136.364% */
+letter-spacing: 0.22px;
+position: absolute;
+right: 410px;
+top: 1040px;
+}
+
+.card1day{
+    color: #FFF;
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 218.182% */
+position: absolute;
+left: 770px;
+top: 1200px;
+}
+.card1date{
+    color: rgba(255, 255, 255, 0.85);
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 266.667% */
+position: absolute;
+left: 770px;
+top: 1230px;
+
+}
+
+.card1button {
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 55px;
+    border: 1.4px solid #FFF;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* Adjusted line-height for vertical centering */
+    text-align: center; /* Center text horizontally */
+    transition: background-color 0.3s ease; /* Adding a smooth transition for background color change */
+  
+    /* Centering the button horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #6888C8; /* Set background color */
+
+    position: absolute;
+    top: 1210px;
+    right: 366px;
+  }
+  
+  /* Hover effect */
+  .card1button:hover {
+    background-color: #FFF;
+    color: #000; /* Change the text color on hover */
+    cursor: pointer;
+  }
+
+  .content-body{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+  
+
+  .second-card{
+    width: 1180px;
+    height: 487.64941px;
+    background: linear-gradient(215deg, #6888C8 0%, #5A98F2 100%);
+    border-radius: 24px;
+    
+    
+    
+    margin-bottom: 66.14px;
+    margin-top: 163px;
+    margin-left: 160px;
+
+    
+    flex-direction: column;
+    
+
+}
+
+
+.img2{
+    border-radius: 20px;
+    position: absolute;
+    right:820px;
+    top: 1750px;
+}
+.card2title{
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 133.333% */ 
+position: absolute;
+top:1600px;
+right: 400px;
+left: 1000;
+}
+
+.card2text{
+    color: rgba(255, 255, 255, 0.90);
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 136.364% */
+letter-spacing: 0.22px;
+position: absolute;
+right: 410px;
+top: 1770px;
+}
+
+.card2day{
+    color: #FFF;
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 218.182% */
+position: absolute;
+left: 750px;
+top: 1920px;
+}
+.card2date{
+    color: rgba(255, 255, 255, 0.85);
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 266.667% */
+position: absolute;
+left: 750px;
+top: 1950px;
+
+}
+
+.card2button {
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 55px;
+    border: 1.4px solid #FFF;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* Adjusted line-height for vertical centering */
+    text-align: center; /* Center text horizontally */
+    transition: background-color 0.3s ease; /* Adding a smooth transition for background color change */
+  
+    /* Centering the button horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #6888C8; /* Set background color */
+
+    position: absolute;
+    top: 1930px;
+    right: 366px;
+  }
+  
+  /* Hover effect */
+  .card2button:hover {
+    background-color: #FFF;
+    color: #000; /* Change the text color on hover */
+    cursor: pointer;
+  }
+  .third-card{
+    width: 1180px;
+    height: 487.64941px;
+    background: linear-gradient(215deg, #6888C8 0%, #5A98F2 100%);
+    border-radius: 24px;
+    
+    
+    
+    margin-bottom: 66.14px;
+    margin-top: 163px;
+    margin-left: 160px;
+
+    
+    flex-direction: column;
+    
+
+}
+
+
+.img3{
+    border-radius: 20px;
+    position: absolute;
+    right:820px;
+    top: 2400px;
+}
+.card3title{
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 133.333% */ 
+position: absolute;
+top:2270px;
+right: 320px;
+left: 1000;
+}
+
+.card3text{
+    color: rgba(255, 255, 255, 0.90);
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 136.364% */
+letter-spacing: 0.22px;
+position: absolute;
+right: 410px;
+top: 2430px;
+}
+
+.card3day{
+    color: #FFF;
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 218.182% */
+position: absolute;
+left: 770px;
+top: 2590px;
+}
+.card3date{
+    color: rgba(255, 255, 255, 0.85);
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 266.667% */
+position: absolute;
+left: 770px;
+top: 2620px;
+
+}
+
+.card3button {
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 55px;
+    border: 1.4px solid #FFF;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* Adjusted line-height for vertical centering */
+    text-align: center; /* Center text horizontally */
+    transition: background-color 0.3s ease; /* Adding a smooth transition for background color change */
+  
+    /* Centering the button horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #6888C8; /* Set background color */
+
+    position: absolute;
+    top: 2600px;
+    right: 366px;
+  }
+  
+  /* Hover effect */
+  .card3button:hover {
+    background-color: #FFF;
+    color: #000; /* Change the text color on hover */
+    cursor: pointer;
+  }
+
+  .forth-card{
+    width: 1180px;
+    height: 487.64941px;
+    background: linear-gradient(215deg, #6888C8 0%, #5A98F2 100%);
+    border-radius: 24px;
+    
+    
+    
+    margin-bottom: 66.14px;
+    margin-top: 163px;
+    margin-left: 160px;
+
+    
+    flex-direction: column;
+    
+
+}
+
+
+.img4{
+    border-radius: 20px;
+    position: absolute;
+    right:820px;
+    top: 3050px;
+}
+.card4title{
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 133.333% */ 
+position: absolute;
+top:2900px;
+right: 320px;
+left: 1000;
+}
+
+.card4text{
+    color: rgba(255, 255, 255, 0.90);
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 400;
+line-height: 30px; /* 136.364% */
+letter-spacing: 0.22px;
+position: absolute;
+right: 380px;
+top: 3090px;
+}
+
+.card4day{
+    color: #FFF;
+font-family: Mulish;
+font-size: 22px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px; /* 218.182% */
+position: absolute;
+left: 770px;
+top: 3250px;
+}
+.card4date{
+    color: rgba(255, 255, 255, 0.85);
+font-family: Mulish;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 48px; /* 266.667% */
+position: absolute;
+left: 770px;
+top: 3280px;
+
+}
+
+.card4button {
+    width: 200px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 55px;
+    border: 1.4px solid #FFF;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px; /* Adjusted line-height for vertical centering */
+    text-align: center; /* Center text horizontally */
+    transition: background-color 0.3s ease; /* Adding a smooth transition for background color change */
+  
+    /* Centering the button horizontally and vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    background-color: #6888C8; /* Set background color */
+
+    position: absolute;
+    top: 3260px;
+    right: 366px;
+  }
+  
+  /* Hover effect */
+  .card4button:hover {
+    background-color: #FFF;
+    color: #000; /* Change the text color on hover */
+    cursor: pointer;
+  }
+
+
+  
+
+
+
+
+
+
+
+footer{
+    width: 100%;
+    height: 416px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(183deg, #6888C8 -8.57%, #5A98F2 82.96%);
+    margin-top: 193px;
+
+}
+.footer{
+    width: 1235px;
+    height: 416px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+.foot1{
+    width: 403px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.footlogo{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.footlogoimg{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+.footlogoimgcircle{
+    width: 42.302px;
+    height: 39.511px;
+    flex-shrink: 0;
+    fill: #FFF;
+ 
+}
+.footlogoimgshape{
+    display: flex;
+    position: absolute;
+    width: 29.588px;
+height: 27.168px;
+flex-shrink: 0;
+}
+.footlogotext{
+    width: 174.365px;
+    height: 29px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 10px;
+}
+.footdesc{
+    width: 403.413px;
+    /* height: 80.948px; */
+    flex-shrink: 0;
+    color: #FFF;
+    font-feature-settings: 'clig' off, 'liga' off;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px; /* 150% */
+    letter-spacing: 0.18px;
+}
+.footrights{
+    width: 403.413px;
+    height: 26.983px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 28px; /* 175% */
+}
+.foot2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.foot2title{
+    width: 94.921px;
+    height: 57.82px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 300% */
+}
+.foot2desc{
+    /* width: 277px; */
+    height: 146.478px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px; /* 211.111% */
+}
+.foot2desc a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.foot2desc a:hover{
+    color: #93d0f7;
+    text-decoration: none;
+}
+.foot3{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.foot3title{
+    width: 69.127px;
+    height: 57.82px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 300% */
+}
+.foot3desc{
+    /* width: 277px; */
+    height: 146.478px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px; /* 211.111% */
+}
+.foot3desc a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.foot3desc a:hover{
+    color: #93d0f7;
+    text-decoration: none;
+}
+.foot4{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.foot4title{
+    width: 46.429px;
+    height: 57.82px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px; /* 300% */
+}
+.foot4desc{
+    /* width: 277px; */
+    height: 146.478px;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px; /* 211.111% */
+}
+.foot4desc a{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.foot4desc a:hover{
+    color: #93d0f7;
+    text-decoration: none;
+}
